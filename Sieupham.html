@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Xuân Bính Ngọ 2026 - Đại Cát Đại Lợi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Dancing+Script:wght@700&family=Cormorant+Garamond:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* =========================================== */
+        /* BẢNG MÀU HOÀN HẢO - SIÊU PHẨM */
+        /* =========================================== */
+        :root {
+            /* Bảng màu chính - Kết hợp hoàn hảo */
+            --red-primary: #c31432;      /* Đỏ tươi nổi bật */
+            --red-dark: #8a0a20;         /* Đỏ đậm truyền thống */
+            --red-deep: #4a0000;         /* Đỏ sẫm tạo chiều sâu */
+            --red-light: #ff4757;        /* Đỏ nhạt cho highlight */
+            
+            /* Bảng vàng - Tinh tế lộng lẫy */
+            --gold-primary: #f8b500;     /* Vàng chủ đạo */
+            --gold-light: #fceabb;       /* Vàng nhạt cho chữ */
+            --gold-metallic: #d4af37;    /* Vàng kim loại */
+            --gold-shadow: #b8860b;      /* Vàng đậm */
+            --gold-glow: rgba(248, 181, 0, 0.8);
+            
+            /* Hiệu ứng kính */
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            
+            /* Shadow */
+            --shadow-heavy: 0 25px 50px rgba(0, 0, 0, 0.6);
+            --shadow-light: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        /* --- RESET & GLOBAL --- */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            overflow: hidden; 
+            background: #000;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            cursor: default;
+        }
+
+        /* --- HIỆU ỨNG NỀN PARALLAX --- */
+        .parallax-bg {
+            position: absolute;
+            top: -10%; 
+            left: -10%; 
+            width: 120%; 
+            height: 120%;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(195, 20, 50, 0.9) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(248, 181, 0, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 40% 60%, rgba(138, 10, 32, 0.6) 0%, transparent 60%),
+                linear-gradient(135deg, #000 0%, #4a0000 30%, #1a0000 100%);
+            z-index: 0;
+            transition: transform 0.1s ease-out;
+            animation: bgPulse 20s infinite alternate;
+        }
+        
+        @keyframes bgPulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        /* --- 1. COUNTDOWN SCREEN HOÀN HẢO --- */
+        .countdown-screen {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: linear-gradient(135deg, #000 0%, #1a0000 100%);
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            z-index: 3000; 
+            transition: opacity 1s ease, visibility 1s;
+        }
+        
+        .countdown-screen.hidden { 
+            opacity: 0; 
+            visibility: hidden;
+            pointer-events: none;
+        }
+        
+        .countdown-circle {
+            width: 300px; 
+            height: 300px;
+            border-radius: 50%;
+            border: 4px solid var(--gold-metallic);
+            box-shadow: 
+                0 0 60px var(--gold-primary),
+                inset 0 0 40px var(--red-primary);
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            position: relative;
+            animation: pulseCircle 1.2s infinite alternate;
+        }
+        
+        .countdown-circle::before {
+            content: '';
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            border: 2px solid rgba(248, 181, 0, 0.3);
+            animation: rotateRing 10s linear infinite;
+        }
+        
+        .countdown-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 8rem; 
+            font-weight: 700; 
+            color: var(--gold-light);
+            text-shadow: 
+                0 0 30px var(--gold-primary),
+                0 0 60px rgba(248, 181, 0, 0.5);
+            animation: numberPulse 1s infinite alternate;
+        }
+        
+        @keyframes pulseCircle {
+            0% { 
+                transform: scale(1); 
+                box-shadow: 0 0 40px var(--gold-primary);
+            }
+            100% { 
+                transform: scale(1.05); 
+                box-shadow: 0 0 80px var(--gold-primary);
+            }
+        }
+        
+        @keyframes rotateRing {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes numberPulse {
+            0% { text-shadow: 0 0 20px var(--gold-primary); }
+            100% { text-shadow: 0 0 40px var(--gold-primary), 0 0 60px rgba(248, 181, 0, 0.4); }
+        }
+
+        /* --- 2. MAIN SCREEN SIÊU PHẨM --- */
+        .main-screen {
+            position: relative; 
+            width: 100%; 
+            height: 100%;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            z-index: 1; 
+            opacity: 0; 
+            transition: opacity 1.2s ease;
+            perspective: 1000px;
+        }
+        
+        .main-screen.show { 
+            opacity: 1; 
+            animation: screenReveal 1.5s ease-out;
+        }
+        
+        @keyframes screenReveal {
+            0% { 
+                opacity: 0; 
+                transform: translateY(50px);
+            }
+            100% { 
+                opacity: 1; 
+                transform: translateY(0);
+            }
+        }
+
+        /* Typography đẳng cấp */
+        .tet-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(4rem, 10vw, 7rem);
+            background: linear-gradient(to bottom, #fceabb, #f8b500, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8));
+            animation: titleGlow 3s infinite alternate;
+            position: relative;
+            padding: 0 20px;
+        }
+        
+        .tet-title::after {
+            content: '🎊';
+            position: absolute;
+            right: -10px;
+            top: -20px;
+            font-size: 3rem;
+            animation: floatIcon 4s infinite ease-in-out;
+        }
+        
+        .tet-year {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--gold-light);
+            margin-bottom: 50px;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+            letter-spacing: 3px;
+            animation: yearFloat 4s infinite ease-in-out;
+        }
+        
+        @keyframes titleGlow {
+            0% { 
+                text-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+                transform: translateY(0);
+            }
+            100% { 
+                text-shadow: 0 5px 25px rgba(248, 181, 0, 0.4);
+                transform: translateY(-5px);
+            }
+        }
+        
+        @keyframes floatIcon {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+        
+        @keyframes yearFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.05); }
+        }
+
+        /* ENVELOPE SIÊU PHẨM - Kết hợp từ cả hai */
+        .envelope-container {
+            width: 320px; 
+            height: 420px;
+            position: relative;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: envelopeFloat 5s infinite ease-in-out;
+            filter: drop-shadow(0 25px 60px rgba(0, 0, 0, 0.7));
+            margin-bottom: 60px;
+        }
+        
+        .envelope-container:hover { 
+            transform: scale(1.08) rotateY(8deg) rotateX(5deg); 
+            animation-play-state: paused;
+        }
+        
+        @keyframes envelopeFloat { 
+            0%, 100% { 
+                transform: translateY(0) rotateX(0) rotateY(0); 
+            } 
+            25% { 
+                transform: translateY(-30px) rotateX(2deg) rotateY(2deg); 
+            }
+            50% {
+                transform: translateY(-15px) rotateX(-1deg) rotateY(-1deg);
+            }
+            75% { 
+                transform: translateY(-25px) rotateX(1deg) rotateY(1deg); 
+            }
+        }
+
+        .envelope-base {
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: linear-gradient(145deg, 
+                var(--red-primary) 0%, 
+                var(--red-dark) 30%, 
+                var(--red-deep) 70%);
+            border-radius: 20px; 
+            border: 6px solid var(--gold-metallic);
+            box-shadow: 
+                inset 0 0 50px rgba(0, 0, 0, 0.4),
+                inset 0 0 30px rgba(248, 181, 0, 0.2),
+                0 30px 70px var(--shadow-heavy);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            z-index: 10;
+            overflow: hidden;
+            transform-style: preserve-3d;
+        }
+        
+        /* Họa tiết Ngựa Bính Ngọ */
+        .horse-pattern {
+            position: absolute; 
+            width: 100%; 
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(248, 181, 0, 0.1) 0%, transparent 50%),
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-size: 80px 80px;
+            opacity: 0.3;
+            animation: patternMove 20s linear infinite;
+        }
+        
+        @keyframes patternMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(80px, 80px); }
+        }
+        
+        .envelope-flap {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 160px;
+            background: linear-gradient(to bottom, 
+                var(--red-light) 0%, 
+                var(--red-primary) 40%,
+                var(--red-dark) 100%); 
+            border-radius: 20px 20px 60% 60%;
+            border-bottom: 6px solid var(--gold-metallic);
+            z-index: 12;
+            transform-origin: top;
+            transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
+            transform-style: preserve-3d;
+        }
+        
+        .envelope-container.open .envelope-flap {
+            transform: rotateX(-180deg) translateY(-40px);
+            opacity: 0.5;
+        }
+        
+        .seal {
+            width: 80px; 
+            height: 80px;
+            background: radial-gradient(circle at 30% 30%, 
+                var(--gold-light) 0%, 
+                var(--gold-primary) 40%, 
+                var(--gold-metallic) 100%);
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            position: absolute; 
+            top: -40px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            font-size: 2.2rem; 
+            color: var(--red-dark); 
+            font-weight: 900;
+            box-shadow: 
+                0 0 30px var(--gold-glow),
+                inset 0 0 20px rgba(255, 255, 255, 0.4);
+            animation: sealGlow 2s infinite alternate;
+            font-family: 'Cormorant Garamond', serif;
+            transform-style: preserve-3d;
+        }
+        
+        @keyframes sealGlow {
+            0% { 
+                transform: translateX(-50%) scale(1);
+                box-shadow: 0 0 30px var(--gold-glow);
+            }
+            100% { 
+                transform: translateX(-50%) scale(1.1);
+                box-shadow: 0 0 50px var(--gold-glow), 0 0 70px rgba(248, 181, 0, 0.4);
+            }
+        }
+        
+        .envelope-text {
+            color: var(--gold-light);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem; 
+            font-weight: 700;
+            text-align: center; 
+            margin-top: 60px;
+            z-index: 20;
+            text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+            line-height: 1.4;
+        }
+
+        /* --- 3. MODAL GLASSMORPHISM HOÀN HẢO --- */
+        .modal {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(15px) brightness(0.9);
+            -webkit-backdrop-filter: blur(15px) brightness(0.9);
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            z-index: 2000;
+            opacity: 0; 
+            pointer-events: none;
+            transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .modal.active { 
+            opacity: 1; 
+            pointer-events: auto; 
+        }
+        
+        .glass-panel {
+            background: linear-gradient(135deg, 
+                rgba(74, 0, 0, 0.8) 0%, 
+                rgba(138, 10, 32, 0.8) 50%,
+                rgba(195, 20, 50, 0.8) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            border-radius: 25px;
+            padding: 45px;
+            width: 90%; 
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 
+                0 25px 60px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(212, 175, 55, 0.2),
+                inset 0 0 30px rgba(255, 255, 255, 0.1);
+            transform: scale(0.8) translateY(50px);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(10px);
+        }
+        
+        .modal.active .glass-panel { 
+            transform: scale(1) translateY(0); 
+        }
+
+        .input-field {
+            width: 100%; 
+            padding: 18px; 
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.95);
+            border: 3px solid var(--gold-metallic);
+            border-radius: 12px;
+            font-size: 1.3rem; 
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: #333; 
+            outline: none;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .input-field:focus { 
+            box-shadow: 0 0 25px var(--gold-glow); 
+            border-color: var(--gold-primary);
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, 
+                var(--gold-shadow) 0%, 
+                var(--gold-primary) 50%,
+                var(--gold-metallic) 100%);
+            background-size: 200%;
+            color: var(--red-dark);
+            border: none; 
+            padding: 18px 45px;
+            font-size: 1.4rem; 
+            font-weight: 800;
+            border-radius: 50px; 
+            cursor: pointer;
+            width: 100%; 
+            margin-top: 20px;
+            transition: all 0.4s;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+        
+        .btn-gold:hover { 
+            background-position: right center; 
+            transform: translateY(-4px); 
+            box-shadow: 0 20px 40px rgba(248, 181, 0, 0.4);
+            letter-spacing: 2px;
+        }
+        
+        .btn-gold:active {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn-gold::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, 
+                rgba(255, 255, 255, 0.3) 0%, 
+                transparent 70%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .btn-gold:hover::before {
+            opacity: 1;
+        }
+
+        /* --- 4. GREETING SCREEN SIÊU PHẨM --- */
+        .greeting-screen {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, 
+                    rgba(195, 20, 50, 0.4) 0%, 
+                    transparent 50%),
+                radial-gradient(circle at 80% 70%, 
+                    rgba(248, 181, 0, 0.3) 0%, 
+                    transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(0, 0, 0, 0.9) 0%, 
+                    rgba(74, 0, 0, 0.8) 50%,
+                    rgba(138, 10, 32, 0.7) 100%);
+            z-index: 2500;
+            display: none; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            overflow-y: auto;
+            padding: 30px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .greeting-screen.active { 
+            display: flex; 
+            animation: greetingReveal 1s cubic-bezier(0.19, 1, 0.22, 1); 
+        }
+        
+        @keyframes greetingReveal { 
+            0% {
+                transform: translateY(100vh) scale(0.9);
+                opacity: 0;
+                filter: blur(20px);
+            } 
+            100% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+                filter: blur(0);
+            } 
+        }
+
+        .avatar-frame {
+            width: 250px; 
+            height: 250px;
+            border-radius: 50%;
+            padding: 6px;
+            background: conic-gradient(
+                from 0deg, 
+                var(--gold-primary), 
+                var(--red-primary), 
+                var(--gold-metallic), 
+                var(--gold-primary)
+            );
+            animation: spinBorder 8s linear infinite;
+            margin-bottom: 30px;
+            box-shadow: 0 0 50px rgba(248, 181, 0, 0.6);
+        }
+        
+        .avatar-img {
+            width: 100%; 
+            height: 100%; 
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.9);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        @keyframes spinBorder { 
+            100% { transform: rotate(360deg); } 
+        }
+
+        .wish-content {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.4rem; 
+            color: var(--gold-light);
+            text-align: center; 
+            line-height: 1.8;
+            max-width: 850px;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(145deg, 
+                rgba(74, 0, 0, 0.4) 0%, 
+                rgba(138, 10, 32, 0.3) 100%);
+            padding: 40px;
+            border-radius: 25px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 2;
+            margin-bottom: 40px;
+        }
+
+        .money-display {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900; 
+            font-size: 3.5rem;
+            background: linear-gradient(to right, 
+                #FFD700, #FDB931, #FFD700, #FDB931);
+            background-size: 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            margin: 30px 0;
+            animation: 
+                popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                moneyGlow 2s infinite alternate,
+                moneyFlow 3s infinite linear;
+            letter-spacing: 1px;
+        }
+        
+        @keyframes popIn { 
+            0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+            70% { transform: scale(1.15) rotate(10deg); }
+            100% { transform: scale(1) rotate(0); opacity: 1; }
+        }
+        
+        @keyframes moneyGlow {
+            0% { text-shadow: 0 0 30px rgba(255, 215, 0, 0.5); }
+            100% { text-shadow: 0 0 50px rgba(255, 215, 0, 0.8), 0 0 70px rgba(253, 185, 49, 0.6); }
+        }
+        
+        @keyframes moneyFlow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        /* --- HIỆU ỨNG MƯA LÌ XÌ --- */
+        .rain-container {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            pointer-events: none; 
+            z-index: 2400; 
+            overflow: hidden;
+            display: none;
+        }
+        
+        .rain-item {
+            position: absolute; 
+            top: -50px;
+            font-size: 35px;
+            animation: fall linear forwards;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+        }
+        
+        @keyframes fall { 
+            to { 
+                transform: translateY(110vh) rotate(360deg); 
+            } 
+        }
+
+        /* --- NÚT NHẠC CAO CẤP --- */
+        #music-btn {
+            position: fixed; 
+            bottom: 40px; 
+            right: 40px;
+            width: 70px; 
+            height: 70px;
+            background: linear-gradient(135deg, 
+                rgba(195, 20, 50, 0.8) 0%, 
+                rgba(138, 10, 32, 0.8) 100%);
+            border: 3px solid var(--gold-primary);
+            border-radius: 50%;
+            color: var(--gold-light);
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            font-size: 2rem; 
+            cursor: pointer; 
+            z-index: 4000;
+            transition: all 0.4s;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            animation: musicFloat 4s infinite ease-in-out;
+        }
+        
+        @keyframes musicFloat {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            25% { transform: translateY(-15px) rotate(5deg); }
+            50% { transform: translateY(-5px) rotate(-5deg); }
+            75% { transform: translateY(-10px) rotate(3deg); }
+        }
+        
+        #music-btn:hover { 
+            background: linear-gradient(135deg, 
+                rgba(138, 10, 32, 0.9) 0%, 
+                rgba(195, 20, 50, 0.9) 100%); 
+            transform: scale(1.15) rotate(15deg); 
+            box-shadow: 
+                0 20px 50px rgba(0, 0, 0, 0.7),
+                0 10px 30px var(--gold-glow);
+            animation-play-state: paused;
+        }
+        
+        #music-btn.playing { 
+            color: var(--gold-metallic); 
+            border-color: var(--gold-metallic); 
+            animation: musicPulse 1.5s infinite;
+        }
+        
+        @keyframes musicPulse {
+            0%, 100% { 
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); 
+            }
+            50% { 
+                box-shadow: 
+                    0 15px 45px rgba(0, 0, 0, 0.6),
+                    0 5px 25px var(--gold-glow),
+                    0 0 30px rgba(248, 181, 0, 0.3); 
+            }
+        }
+
+        /* --- FIREWORKS CANVAS --- */
+        #firework-canvas { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            pointer-events: none; 
+            z-index: 5; 
+        }
+
+        /* --- TEXT CHÂN TRANG --- */
+        .footer-text {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+            color: rgba(252, 234, 187, 0.6);
+            font-size: 1.1rem;
+            z-index: 2;
+            font-weight: 500;
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 1.5px;
+        }
+        
+        .footer-text i {
+            margin: 0 15px;
+            color: var(--gold-primary);
+            animation: starTwinkle 2s infinite alternate;
+        }
+        
+        @keyframes starTwinkle {
+            0% { opacity: 0.6; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* --- RESPONSIVE TINH TẾ --- */
+        @media(max-width: 1200px) {
+            .tet-title { font-size: 5rem; }
+            .wish-content { font-size: 2rem; }
+        }
+
+        @media(max-width: 768px) {
+            .tet-title { 
+                font-size: 3.5rem; 
+                padding: 0 15px;
+            }
+            .tet-year { 
+                font-size: 2rem; 
+                margin-bottom: 40px;
+            }
+            .envelope-container { 
+                width: 280px; 
+                height: 370px;
+                margin-bottom: 40px;
+            }
+            .seal { 
+                width: 70px; 
+                height: 70px; 
+                font-size: 1.8rem; 
+                top: -35px;
+            }
+            .avatar-frame { 
+                width: 220px; 
+                height: 220px; 
+            }
+            .money-display { 
+                font-size: 2.5rem; 
+            }
+            .wish-content { 
+                font-size: 1.8rem; 
+                padding: 30px;
+            }
+            .glass-panel { 
+                padding: 35px 25px; 
+            }
+            .input-field { 
+                padding: 16px; 
+                font-size: 1.2rem; 
+            }
+            .btn-gold { 
+                padding: 16px 35px; 
+                font-size: 1.3rem; 
+            }
+            #music-btn { 
+                width: 65px; 
+                height: 65px; 
+                font-size: 1.8rem;
+                bottom: 30px;
+                right: 30px;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .tet-title { 
+                font-size: 2.8rem; 
+                line-height: 1.2;
+            }
+            .tet-year { 
+                font-size: 1.6rem; 
+                margin-bottom: 30px;
+            }
+            .envelope-container { 
+                width: 240px; 
+                height: 320px; 
+                margin-bottom: 30px;
+            }
+            .seal { 
+                width: 60px; 
+                height: 60px; 
+                font-size: 1.6rem; 
+                top: -30px;
+            }
+            .envelope-text { 
+                font-size: 1.5rem; 
+                margin-top: 40px;
+            }
+            .avatar-frame { 
+                width: 180px; 
+                height: 180px; 
+                margin-bottom: 20px;
+            }
+            .money-display { 
+                font-size: 2rem; 
+            }
+            .wish-content { 
+                font-size: 1.5rem; 
+                padding: 25px 20px; 
+                line-height: 1.5;
+            }
+            .glass-panel { 
+                padding: 30px 20px; 
+                border-radius: 20px;
+            }
+            .input-field { 
+                padding: 14px; 
+                font-size: 1.1rem; 
+                border-radius: 10px;
+            }
+            .btn-gold { 
+                padding: 14px 30px; 
+                font-size: 1.2rem;
+                border-radius: 40px;
+            }
+            #music-btn { 
+                width: 60px; 
+                height: 60px; 
+                font-size: 1.6rem;
+                bottom: 25px;
+                right: 25px;
+            }
+            .footer-text {
+                font-size: 0.9rem;
+                bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ÂM THANH -->
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-new-year-2022-1135.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="click-sound" class="click-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="open-envelope-sound" class="click-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-magic-paper-woosh-1490.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="error-sound" class="click-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="success-sound" class="click-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- NÚT NHẠC -->
+    <div id="music-btn" onclick="toggleAudio()">
+        <i class="fas fa-music"></i>
+    </div>
+
+    <!-- NỀN PARALLAX -->
+    <div class="parallax-bg" id="parallaxBg"></div>
+    <canvas id="firework-canvas"></canvas>
+    
+    <!-- HIỆU ỨNG MƯA LÌ XÌ -->
+    <div class="rain-container" id="rainEffect"></div>
+
+    <!-- MÀN HÌNH ĐẾM NGƯỢC -->
+    <div class="countdown-screen" id="countdownScreen">
+        <div class="countdown-circle">
+            <div class="countdown-number" id="countNum">5</div>
+        </div>
+        <div style="color: var(--gold-light); margin-top: 30px; font-size: 1.4rem; letter-spacing: 4px; font-family: 'Cormorant Garamond';">
+            XUÂN BÍNH NGỌ 2026
+        </div>
+    </div>
+
+    <!-- MÀN HÌNH CHÍNH -->
+    <div class="main-screen" id="mainScreen">
+        <h1 class="tet-title">Xuân Bính Ngọ</h1>
+        <div class="tet-year">2026 - Vạn Sự Như Ý</div>
+
+        <div class="envelope-container" id="envelope">
+            <div class="envelope-flap">
+                <div class="seal">LỘC</div>
+            </div>
+            <div class="envelope-base">
+                <div class="horse-pattern"></div>
+                <div class="envelope-text">
+                    PHÚC LỘC THỌ<br>
+                    TÀI VƯỢNG<br>
+                    AN KHANG
+                </div>
+            </div>
+        </div>
+        
+        <p style="color: rgba(255,255,255,0.7); margin-top: 40px; font-size: 1rem; font-family: 'Cormorant Garamond';">
+            <i class="fas fa-hand-point-up" style="margin-right: 10px;"></i>
+            Chạm để mở quà may mắn
+        </p>
+        
+        <div class="footer-text">
+            <i class="fas fa-star"></i>
+            Mã Đáo Thành Công · Ngựa Đến Phúc Lai
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+
+    <!-- MODAL XÁC THỰC -->
+    <div class="modal" id="authModal">
+        <div class="glass-panel">
+            <div style="font-size: 3.5rem; color: var(--gold-primary); margin-bottom: 15px;">
+                <i class="fas fa-horse-head"></i>
+            </div>
+            <h2 style="color: var(--gold-light); font-family: 'Cormorant Garamond'; font-size: 2.5rem; margin-bottom: 10px;">
+                Mở Lì Xì Đầu Xuân
+            </h2>
+            <p style="color: var(--gold-light); margin-bottom: 30px; font-size: 1.1rem; opacity: 0.9;">
+                Nhận lời chúc và quà may mắn riêng cho bạn
+            </p>
+            
+            <select id="userSelect" class="input-field">
+                <option value="" disabled selected>-- Bạn là ai trong gia đình? --</option>
+            </select>
+            
+            <div id="passContainer" style="display:none; animation: slideDown 0.4s;">
+                <input type="text" id="passInput" class="input-field" placeholder="Nhập ngày sinh (VD: 01/01/1970)" autocomplete="off">
+                <button class="btn-gold" onclick="unlockGift()">
+                    <i class="fas fa-gift"></i> MỞ PHONG BAO MAY MẮN
+                </button>
+            </div>
+            
+            <div id="errorMsg" style="color: #ff6b6b; margin-top: 20px; height: 25px; font-weight: 600; font-size: 1.1rem; min-height: 30px;"></div>
+        </div>
+    </div>
+
+    <!-- MÀN HÌNH CHÚC MỪNG -->
+    <div class="greeting-screen" id="greetingScreen">
+        <div class="avatar-frame">
+            <img id="userAvatar" class="avatar-img" src="" alt="Ảnh đại diện">
+        </div>
+        <h2 id="userName" style="color: var(--gold-metallic); font-size: 2.8rem; font-family: 'Cormorant Garamond'; margin-bottom: 25px; text-shadow: 0 4px 15px rgba(0,0,0,0.5);"></h2>
+        
+        <div class="wish-content" id="wishText"></div>
+        
+        <div style="text-align: center; z-index: 2;">
+            <div style="color: var(--gold-light); margin-bottom: 15px; font-size: 1.5rem; font-weight: 600; text-shadow: 0 2px 8px rgba(0,0,0,0.5);">
+                <i class="fas fa-money-bill-wave" style="margin-right: 15px;"></i>
+                LÌ XÌ ĐẦU XUÂN MAY MẮN
+            </div>
+            <div class="money-display" id="moneyCounter">0 VND</div>
+        </div>
+
+        <button class="btn-gold" style="width: auto; padding: 15px 40px; margin-top: 40px;" onclick="location.reload()">
+            <i class="fas fa-redo-alt"></i> NHẬN LÌ XÌ TIẾP THEO
+        </button>
+    </div>
+
+    <script>
+        // ==========================================
+        // DATABASE SIÊU PHẨM
+        // ==========================================
+        const DB = {
+            "bo": { 
+                name: "BỐ YÊU", 
+                pass: "01/01/1970", 
+                money: 8888888, 
+                img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face", 
+                wish: "Năm Bính Ngọ, con kính chúc Bố sức khỏe dẻo dai như ngựa chiến, công việc thuận lợi như ngựa phi, luôn là cây cao bóng cả che chở cho cả gia đình. Chúc Bố một năm mới an khang thịnh vượng!" 
+            },
+            "me": { 
+                name: "MẸ HIỀN", 
+                pass: "20/10/1975", 
+                money: 9999999, 
+                img: "https://images.unsplash.com/photo-1551843021-d7563d03356e?w=400&h=400&fit=crop&crop=face", 
+                wish: "Con chúc Mẹ năm mới trẻ mãi không già, nụ cười luôn nở trên môi. Cảm ơn Mẹ đã vất vả vì chúng con, Mẹ mãi là người phụ nữ đẹp nhất! Chúc Mẹ một năm mới ngập tràn hạnh phúc!" 
+            },
+            "anh": { 
+                name: "ANH HAI", 
+                pass: "15/05/2000", 
+                money: 6666666, 
+                img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face", 
+                wish: "Chúc ông anh năm Ngọ 'Mã Đáo Thành Công', tiền vào như nước, tình duyên phơi phới, sớm rước chị dâu về nhà! Chúc anh một năm mới thành công rực rỡ!" 
+            },
+            "chi": { 
+                name: "CHỊ GÁI", 
+                pass: "08/03/1998", 
+                money: 7777777, 
+                img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face", 
+                wish: "Chúc bà chị năm mới xinh đẹp rạng ngời, công việc thăng tiến vù vù, tiền đầy túi, tình đầy tim! Chúc chị một năm mới ngập tràn niềm vui!" 
+            },
+            "em": { 
+                name: "EM ÚT", 
+                pass: "01/06/2005", 
+                money: 5555555, 
+                img: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&h=400&fit=crop&crop=face", 
+                wish: "Chúc em út học giỏi, ngoan ngoãn, càng lớn càng xinh. Năm mới đạt được mọi ước mơ nhé! Chúc em một năm mới thành công trong học tập!" 
+            },
+            "ongba": { 
+                name: "ÔNG BÀ", 
+                pass: "01/01/1950", 
+                money: 10000000, 
+                img: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=400&fit=crop&crop=face", 
+                wish: "Kính chúc Ông Bà năm mới sức khỏe dồi dào, sống lâu trăm tuổi, luôn vui vẻ bên con cháu và hưởng trọn phúc lộc! Chúc Ông Bà một năm mới bình an hạnh phúc!" 
+            }
+        };
+
+        // ==========================================
+        // KHỞI TẠO
+        // ==========================================
+        window.onload = () => {
+            initSelect();
+            startCountdown();
+            initParallax();
+            initAudio();
+        };
+
+        function initSelect() {
+            const sel = document.getElementById('userSelect');
+            for(let key in DB) {
+                let opt = document.createElement('option');
+                opt.value = key;
+                opt.text = DB[key].name;
+                sel.add(opt);
+            }
+            sel.addEventListener('change', () => {
+                document.getElementById('passContainer').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('passInput').focus();
+                    document.getElementById('passInput').select();
+                }, 300);
+                document.getElementById('errorMsg').textContent = '';
+            });
+        }
+
+        // ==========================================
+        // COUNTDOWN
+        // ==========================================
+        function startCountdown() {
+            let count = 5; // Countdown ngắn hơn
+            const timer = setInterval(() => {
+                count--;
+                const countNum = document.getElementById('countNum');
+                countNum.innerText = count;
+                
+                if(count <= 3) {
+                    countNum.style.color = "var(--red-light)";
+                    countNum.style.textShadow = "0 0 50px rgba(255, 71, 87, 0.8)";
+                }
+                
+                if(count <= 0) {
+                    clearInterval(timer);
+                    countNum.innerText = "XUÂN 2026";
+                    countNum.style.fontSize = "6rem";
+                    
+                    setTimeout(() => {
+                        document.getElementById('countdownScreen').classList.add('hidden');
+                        setTimeout(() => {
+                            document.getElementById('mainScreen').classList.add('show');
+                            startFireworks();
+                        }, 500);
+                    }, 1200);
+                }
+            }, 1000);
+        }
+
+        // ==========================================
+        // PARALLAX EFFECT
+        // ==========================================
+        function initParallax() {
+            document.addEventListener('mousemove', (e) => {
+                const bg = document.getElementById('parallaxBg');
+                const x = (window.innerWidth - e.pageX * 2) / 80;
+                const y = (window.innerHeight - e.pageY * 2) / 80;
+                bg.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+            });
+        }
+
+        // ==========================================
+        // ENVELOPE INTERACTION
+        // ==========================================
+        document.getElementById('envelope').addEventListener('click', () => {
+            playSound('click');
+            document.getElementById('envelope').classList.add('open');
+            
+            setTimeout(() => {
+                playSound('open-envelope');
+                document.getElementById('authModal').classList.add('active');
+            }, 800);
+        });
+
+        // ==========================================
+        // UNLOCK LOGIC
+        // ==========================================
+        function unlockGift() {
+            playSound('click');
+            
+            const key = document.getElementById('userSelect').value;
+            const pass = document.getElementById('passInput').value.trim();
+            const error = document.getElementById('errorMsg');
+
+            if(!key || !pass) {
+                error.innerHTML = '<i class="fas fa-exclamation-circle"></i> Vui lòng nhập đầy đủ thông tin!';
+                shakeElement(document.querySelector('.glass-panel'));
+                return;
+            }
+
+            if(DB[key].pass === pass) {
+                playSound('success');
+                showGreeting(DB[key]);
+            } else {
+                playSound('error');
+                error.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Mật khẩu (ngày sinh) chưa đúng!';
+                shakeElement(document.querySelector('.glass-panel'));
+            }
+        }
+
+        function shakeElement(el) {
+            el.style.animation = 'none';
+            el.offsetHeight; // Trigger reflow
+            el.style.animation = 'pulseCircle 0.5s';
+            el.style.transform = 'translateX(5px)';
+            setTimeout(() => el.style.transform = 'translateX(-5px)', 50);
+            setTimeout(() => el.style.transform = 'scale(1)', 100);
+        }
+
+        // ==========================================
+        // GREETING DISPLAY
+        // ==========================================
+        function showGreeting(data) {
+            document.getElementById('authModal').classList.remove('active');
+            document.getElementById('mainScreen').style.display = 'none';
+            const screen = document.getElementById('greetingScreen');
+            screen.classList.add('active');
+
+            // Cập nhật thông tin
+            document.getElementById('userAvatar').src = data.img;
+            document.getElementById('userName').innerText = data.name;
+            typeWriter(data.wish, 'wishText');
+            
+            // Hiệu ứng số tiền nhảy
+            animateValue("moneyCounter", 0, data.money, 2000);
+            
+            // Hiệu ứng mưa lì xì
+            createRain();
+            
+            // Tăng cường pháo hoa
+            intensifyFireworks();
+            
+            // Tăng âm lượng nhạc
+            const bgMusic = document.getElementById('bg-music');
+            bgMusic.volume = 0.8;
+        }
+
+        // Hiệu ứng số nhảy
+        function animateValue(id, start, end, duration) {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const currentVal = Math.floor(progress * (end - start) + start);
+                obj.innerHTML = new Intl.NumberFormat('vi-VN').format(currentVal) + " VND";
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    obj.style.textShadow = "0 0 40px #fff, 0 0 80px #FFD700";
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Hiệu ứng gõ chữ
+        function typeWriter(text, id) {
+            const el = document.getElementById(id);
+            el.innerHTML = "";
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    el.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, 30);
+                }
+            }
+            type();
+        }
+
+        // Hiệu ứng mưa lì xì
+        function createRain() {
+            const container = document.getElementById('rainEffect');
+            container.style.display = 'block';
+            const items = ['💰', '🧧', '🎁', '✨', '🌸', '🍊'];
+            
+            setInterval(() => {
+                const el = document.createElement('div');
+                el.classList.add('rain-item');
+                el.innerText = items[Math.floor(Math.random() * items.length)];
+                el.style.left = Math.random() * 100 + "vw";
+                el.style.animationDuration = Math.random() * 2 + 3 + "s";
+                el.style.opacity = Math.random() * 0.7 + 0.3;
+                el.style.fontSize = Math.random() * 20 + 25 + "px";
+                container.appendChild(el);
+                
+                setTimeout(() => { el.remove(); }, 5000);
+            }, 100);
+        }
+
+        // ==========================================
+        // AUDIO CONTROL
+        // ==========================================
+        function initAudio() {
+            const audio = document.getElementById('bg-music');
+            audio.volume = 0.6;
+            
+            // Tự động phát nhạc
+            setTimeout(() => {
+                audio.play().then(() => {
+                    const musicBtn = document.getElementById('music-btn');
+                    musicBtn.classList.add('playing');
+                    musicBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }).catch(() => {
+                    console.log("Autoplay bị chặn, click vào trang để nghe nhạc");
+                });
+            }, 2000);
+        }
+
+        function toggleAudio() {
+            const audio = document.getElementById('bg-music');
+            const btn = document.getElementById('music-btn');
+            
+            if(audio.paused) {
+                audio.play();
+                btn.classList.add('playing');
+                btn.innerHTML = '<i class="fas fa-volume-up"></i>';
+            } else {
+                audio.pause();
+                btn.classList.remove('playing');
+                btn.innerHTML = '<i class="fas fa-music"></i>';
+            }
+        }
+
+        function playSound(type) {
+            const soundMap = {
+                'click': document.getElementById('click-sound'),
+                'open-envelope': document.getElementById('open-envelope-sound'),
+                'error': document.getElementById('error-sound'),
+                'success': document.getElementById('success-sound')
+            };
+            
+            const sound = soundMap[type];
+            if(sound) {
+                sound.currentTime = 0;
+                sound.play().catch(e => console.log("Không thể phát âm thanh:", e));
+            }
+        }
+
+        // ==========================================
+        // FIREWORKS SYSTEM
+        // ==========================================
+        const canvas = document.getElementById('firework-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        let fireworks = [];
+        let particles = [];
+        let fireworkIntensity = 1;
+
+        function startFireworks() {
+            animateFireworks();
+            setInterval(() => {
+                if(document.visibilityState === 'visible') {
+                    fireworks.push(new Firework(
+                        Math.random() * canvas.width, 
+                        canvas.height, 
+                        Math.random() * canvas.width, 
+                        Math.random() * canvas.height / 2
+                    ));
+                }
+            }, 800);
+        }
+
+        function intensifyFireworks() {
+            fireworkIntensity = 5;
+            setInterval(() => {
+                for(let i = 0; i < fireworkIntensity; i++) {
+                    setTimeout(() => {
+                        fireworks.push(new Firework(
+                            Math.random() * canvas.width, 
+                            canvas.height, 
+                            Math.random() * canvas.width, 
+                            Math.random() * canvas.height / 3
+                        ));
+                    }, i * 100);
+                }
+            }, 400);
+        }
+
+        class Firework {
+            constructor(x, y, targetX, targetY) {
+                this.x = x;
+                this.y = y;
+                this.targetX = targetX;
+                this.targetY = targetY;
+                this.speed = 4;
+                this.angle = Math.atan2(targetY - y, targetX - x);
+                this.velocity = {
+                    x: Math.cos(this.angle) * this.speed,
+                    y: Math.sin(this.angle) * this.speed
+                };
+                this.active = true;
+                this.color = this.getRandomColor();
+            }
+            
+            getRandomColor() {
+                const colors = ['#FFD700', '#FF4757', '#FFFFFF', '#FFA500', '#FF69B4'];
+                return colors[Math.floor(Math.random() * colors.length)];
+            }
+            
+            update() {
+                this.x += this.velocity.x * 2;
+                this.y += this.velocity.y * 2;
+                
+                if (Math.abs(this.x - this.targetX) < 10 && Math.abs(this.y - this.targetY) < 10) {
+                    this.active = false;
+                    createParticles(this.x, this.y, this.color);
+                }
+            }
+            
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, 3, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                
+                // Tạo hiệu ứng đuôi
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, 6, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = 0.3;
+                ctx.fill();
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        function createParticles(x, y, color) {
+            for (let i = 0; i < 60; i++) {
+                particles.push({
+                    x: x,
+                    y: y,
+                    vx: (Math.random() - 0.5) * 8,
+                    vy: (Math.random() - 0.5) * 8,
+                    alpha: 1,
+                    size: Math.random() * 4 + 2,
+                    color: color,
+                    life: 1
+                });
+            }
+        }
+
+        function animateFireworks() {
+            requestAnimationFrame(animateFireworks);
+            
+            // Tạo hiệu ứng fade background
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Vẽ pháo hoa
+            fireworks.forEach((fw, i) => {
+                fw.update();
+                fw.draw();
+                if (!fw.active) fireworks.splice(i, 1);
+            });
+            
+            // Vẽ particle
+            particles.forEach((p, i) => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.03; // Gravity
+                p.alpha -= 0.01;
+                p.life -= 0.01;
+                
+                ctx.globalAlpha = p.alpha;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Hiệu ứng glow
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size * 1.5, 0, Math.PI * 2);
+                ctx.fillStyle = p.color;
+                ctx.globalAlpha = p.alpha * 0.2;
+                ctx.fill();
+                
+                if (p.life <= 0) particles.splice(i, 1);
+            });
+            ctx.globalAlpha = 1;
+        }
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Cho phép phát nhạc khi click trang
+        document.body.addEventListener('click', function initAudioOnce() {
+            const audio = document.getElementById('bg-music');
+            if (audio.paused) {
+                audio.play().then(() => {
+                    const musicBtn = document.getElementById('music-btn');
+                    musicBtn.classList.add('playing');
+                    musicBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }).catch(() => {});
+            }
+            document.body.removeEventListener('click', initAudioOnce);
+        });
+    </script>
+</body>
+</html>
